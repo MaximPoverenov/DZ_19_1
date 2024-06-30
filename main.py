@@ -16,7 +16,7 @@ class MyServer(BaseHTTPRequestHandler):
         """ Метод для обработки входящих GET-запросов """
 
         # пример получения содержимого html-файла с удаленного репозитория
-        URL = "https://raw.githubusercontent.com/MaximPoverenov/DZ_19/develop/index.html"
+        URL = "https://raw.githubusercontent.com/MaximPoverenov/DZ_19_1/develop/index.html"
         response = requests.get(URL)
         if response.status_code == 200:
             page_content = response.content
